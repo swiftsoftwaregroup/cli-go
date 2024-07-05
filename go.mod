@@ -1,4 +1,4 @@
-module github.com/vkantchev/cli-golang
+module github.com/swiftsoftwaregroup/cli-go
 
 go 1.22.5
 

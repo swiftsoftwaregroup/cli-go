@@ -1,4 +1,4 @@
-# cli-golang
+# cli-go
 Template for Command Line Interface (CLI) tool in Go
 
 ## Development
@@ -41,11 +41,29 @@ code .
 go build
 ```
 
+### Run
+
+```bash
+echo "John" > name.txt
+
+./cli-go greet name.txt
+./cli-go greet --language es name.txt
+./cli-go greet -l bg name.txt
+```
+
+Output:
+
+```bash
+Hello, John!
+Hola, John!
+Здравей, John!
+```
+
 ### How to create a new project
 
 ```bash
 # create module
-go mod init github.com/vkantchev/cli-golang
+go mod init github.com/username/cli-go
 
 # add packages
 go get github.com/spf13/cobra
