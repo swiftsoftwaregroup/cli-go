@@ -59,13 +59,20 @@ Hola, John!
 Здравей, John!
 ```
 
+### Test
+
+```bash
+go test -v
+```
+
 ### How to create a new project
 
 ```bash
 # create module
-go mod init github.com/username/cli-go
+go mod init github.com/<username>/cli-go
 
 # add packages
+# see: https://cobra.dev
 go get github.com/spf13/cobra
 
 touch main.go
