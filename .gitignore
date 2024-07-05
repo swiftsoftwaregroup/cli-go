@@ -1,2 +1,8 @@
+# build
 cli-go
+
+# test
 name.txt
+
+# docs
+doc.html

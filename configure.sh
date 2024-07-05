@@ -13,4 +13,7 @@ goenv local 1.22.5
 goenv versions
 
 # use Go from .go-version for local development
-eval "$(goenv init -)"  
+eval "$(goenv init -)"
+
+# add go tools
+go install golang.org/x/tools/cmd/godoc@latest

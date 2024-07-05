@@ -38,7 +38,7 @@ code .
 ### Build
 
 ```bash
-go build
+go build ./...
 ```
 
 ### Run
@@ -65,6 +65,22 @@ Hola, John!
 go test -v
 ```
 
+### Generate Docs
+
+```bash
+godoc
+```
+
+Browse docs:
+
+```bash
+# this package
+open http://localhost:6060/pkg/github.com/swiftsoftwaregroup/cli-go
+
+# all packages
+open http://localhost:6060/pkg/
+```
+
 ### How to create a new project
 
 ```bash
@@ -76,5 +92,11 @@ go mod init github.com/<username>/cli-go
 go get github.com/spf13/cobra
 
 touch main.go
+```
+
+Tools:
+
+```bash
+go install golang.org/x/tools/cmd/godoc@latest
 ```
 
